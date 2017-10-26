@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( sorting_algs )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( sorting_algs sorting_algs.cpp )
+target_link_libraries( sorting_algs ${OpenCV_LIBS} ) 
